@@ -1,0 +1,303 @@
+body {
+    background-color: #dfe9c1;
+}
+
+#navigation {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.logo-img {
+    width: 12em;
+}
+.navbar .nav a{
+     font-size: 1.5em;
+}
+button[class="navbar-toggler"]{
+   display: none;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.bi {
+    color: white;
+    font-size: 1.5em;
+}
+
+#my-menu {
+    background-color: rgb(76, 142, 230);
+    width: 13%;
+    position: absolute;
+    right: 0px;
+    padding: 0px 10px;
+    z-index: 1;
+}
+
+#my-menu a {
+    color: white;
+    font-size: .8em;
+}
+
+.b1-tittle,
+.b1-des {
+    color: white;
+    margin: 0% auto;
+}
+
+.b1-tittle {
+    padding-top: 10%;
+    font-size: 7em;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1em;
+    margin-bottom: 3%;
+}
+
+.b1-des {
+    font-size: 1.6em;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 17%;
+    width: 60%;
+}
+
+.b1-img1,
+.b1-img2 {
+    position: absolute;
+}
+
+.b1-img1 {
+    width: 15%;
+    top: 91%;
+    left: 10%;
+}
+
+.b1-img2 {
+    bottom: 40%;
+    right: 0%;
+    width: 8.5%;
+    z-index: 0;
+}
+
+@media (max-width:390px){
+    button[class="navbar-toggler"]{
+        display: block;
+     }
+     .navbar .nav{
+        display: none;
+     }
+     .logo-img {
+        width: 5em;
+    }
+    #my-menu {
+        width: 20%;
+    }
+    .b1-tittle {
+        font-size: 2em;
+    }
+
+    .b1-des {
+        font-size: .5em;
+        padding-bottom: 26%;
+    }
+    
+}
+
+
+@media (min-width:390px) and (max-width:576px) {
+    button[class="navbar-toggler"]{
+        display: block;
+     }
+     .navbar .nav{
+        display: none;
+     }
+    .logo-img {
+        width: 5em;
+    }
+    
+    .bi {
+        font-size: 1.2em;
+    }
+
+    #my-menu {
+        width: 18%;
+    }
+
+    #my-menu a {
+        font-size: .7em;
+    }
+
+    .b1-tittle {
+        font-size: 3em;
+    }
+
+    .b1-des {
+        font-size: .7em;
+        padding-bottom: 26%;
+    }
+    .b1-img1 {
+        top: 90%;
+        left: 10%;
+    }
+    .b1-img2 {
+        bottom: 48%;
+        right: 0%;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px){
+    button[class="navbar-toggler"]{
+        display: block;
+     }
+
+     .navbar .nav{
+        display: none;
+     }
+    .logo-img {
+        width: 7em;
+    }
+
+    .bi {
+        font-size: 1.5em;
+    }
+
+    #my-menu {
+        width: 18%;
+    }
+
+    #my-menu a {
+        font-size: .8em;
+    }
+
+    .b1-tittle {
+        font-size: 4em;
+    }
+
+    .b1-des {
+        font-size: .7em;
+        padding-bottom: 26%;
+    }
+    .b1-img1 {
+        top: 90%;
+        left: 10%;
+    }
+    .b1-img2 {
+        bottom: 48%;
+        right: 0%;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .logo-img {
+        width: 7em;
+    }
+
+    .bi {
+        font-size: 1.5em;
+    }
+    .navbar .nav a{
+        font-size: 1.1em;
+   }
+    #my-menu {
+        width: 14%;
+    }
+
+    #my-menu a {
+        font-size: .8em;
+    }
+
+    .b1-tittle {
+        font-size: 4.7em;
+    }
+
+    .b1-des {
+        font-size: 1em;
+        padding-bottom: 26%;
+    }
+    .b1-img1 {
+        top: 90%;
+        left: 10%;
+    }
+    .b1-img2 {
+        bottom: 48%;
+        right: 0%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .logo-img {
+        width: 8em;
+    }
+
+    .bi {
+        font-size: 1.5em;
+    }
+    .navbar .nav a{
+        font-size: 1.2em;
+   }
+
+    #my-menu {
+        width: 14%;
+    }
+
+    #my-menu a {
+        font-size: 1em;
+    }
+
+    .b1-tittle {
+        font-size: 5.5em;
+    }
+
+    .b1-des {
+        font-size: 1.2em;
+        padding-bottom: 26%;
+    }
+    .b1-img1 {
+        top: 90%;
+        left: 10%;
+    }
+    .b1-img2 {
+        bottom: 48%;
+        right: 0%;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px){
+    .logo-img {
+        width: 9em;
+    }
+
+    .bi {
+        font-size: 1.8em;
+    }
+
+    #my-menu {
+        width: 14%;
+    }
+
+    #my-menu a {
+        font-size: 1em;
+    }
+
+    .b1-tittle {
+        font-size: 6.2em;
+    }
+
+    .b1-des {
+        font-size: 1.2em;
+        padding-bottom: 26%;
+    }
+    .b1-img1 {
+        top: 90%;
+        left: 10%;
+    }
+    .b1-img2 {
+        bottom: 48%;
+        right: 0%;
+    }
+}
