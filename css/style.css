@@ -1,5 +1,6 @@
 body {
     background-color: #dfe9c1;
+    text-align: center;
 }
 
 #navigation {
@@ -12,12 +13,11 @@ body {
 .logo-img {
     width: 12em;
 }
-.navbar .nav a{
-     font-size: 1.5em;
+
+.navbar .nav a {
+    font-size: 1.5em;
 }
-button[class="navbar-toggler"]{
-   display: none;
-}
+
 .navbar-toggler {
     border: none;
 }
@@ -26,7 +26,15 @@ button[class="navbar-toggler"]{
     box-shadow: none;
 }
 
-.bi {
+.menu-btn {
+    display: none;
+}
+
+.navbar .nav {
+    display: flex;
+}
+
+.bi-list {
     color: white;
     font-size: 1.5em;
 }
@@ -84,19 +92,80 @@ button[class="navbar-toggler"]{
     z-index: 0;
 }
 
-@media (max-width:390px){
-    button[class="navbar-toggler"]{
+
+/* Banner 2 is from here */
+
+.b2-shape1 {
+    width: 65%;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+    bottom: 611pt;
+}
+.b2-shape2 {
+    width: 26%;
+    position: absolute;
+    right: 0px;
+    top: -171pt;
+    z-index: -1;
+}
+
+.popular-menu h1 {
+    color: #2F58CD;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.7em;
+    font-weight: 700;
+    padding-top: 10%;
+}
+
+.popular-menu .row {
+    margin-top: 8%;
+}
+
+.popular-menu button {
+    background-color: #2F58CD;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-top: 8%;
+    font-size: 2em;
+    padding: 0.5% 3%;
+}
+
+.b2-card {
+    margin: 0px auto;
+    width: 80%;
+    text-align: left;
+}
+
+.b2-card h1 {
+    color: black;
+    padding-top: 0%;
+}
+
+.b2-card p {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+
+
+@media (max-width:390px) {
+    .menu-btn {
         display: block;
-     }
-     .navbar .nav{
+    }
+
+    .navbar .nav {
         display: none;
-     }
-     .logo-img {
+    }
+
+    .logo-img {
         width: 5em;
     }
+
     #my-menu {
         width: 20%;
     }
+
     .b1-tittle {
         font-size: 2em;
     }
@@ -105,21 +174,23 @@ button[class="navbar-toggler"]{
         font-size: .5em;
         padding-bottom: 26%;
     }
-    
+
 }
 
 
 @media (min-width:390px) and (max-width:576px) {
-    button[class="navbar-toggler"]{
+    .menu-btn {
         display: block;
-     }
-     .navbar .nav{
+    }
+
+    .navbar .nav {
         display: none;
-     }
+    }
+
     .logo-img {
         width: 5em;
     }
-    
+
     .bi {
         font-size: 1.2em;
     }
@@ -140,24 +211,38 @@ button[class="navbar-toggler"]{
         font-size: .7em;
         padding-bottom: 26%;
     }
+
     .b1-img1 {
         top: 90%;
         left: 10%;
     }
+
     .b1-img2 {
         bottom: 48%;
         right: 0%;
     }
+
+    /* Banner 2 ************************* */
+    .b2-shape1 {
+        width: 5rem;
+        bottom: 30rem;
+    }
+
+    .b2-shape2 {
+        width: 23%;
+        top: -82pt;
+    }
 }
 
-@media (min-width:576px) and (max-width:768px){
-    button[class="navbar-toggler"]{
+@media (min-width:576px) and (max-width:768px) {
+    .menu-btn {
         display: block;
-     }
+    }
 
-     .navbar .nav{
+    .navbar .nav {
         display: none;
-     }
+    }
+
     .logo-img {
         width: 7em;
     }
@@ -182,17 +267,38 @@ button[class="navbar-toggler"]{
         font-size: .7em;
         padding-bottom: 26%;
     }
+
     .b1-img1 {
         top: 90%;
         left: 10%;
     }
+
     .b1-img2 {
         bottom: 48%;
         right: 0%;
     }
+
+    /* Banner 2 ***************** */
+    .b2-shape1 {
+        width: 59%;
+        bottom: 600pt;
+    }
+
+    .b2-shape2 {
+        width: 23%;
+        top: -82pt;
+    }
 }
 
-@media (min-width:768px) and (max-width:992px){
+@media (min-width:768px) and (max-width:992px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .navbar .nav {
+        display: flex;
+    }
+
     .logo-img {
         width: 7em;
     }
@@ -200,9 +306,11 @@ button[class="navbar-toggler"]{
     .bi {
         font-size: 1.5em;
     }
-    .navbar .nav a{
+
+    .navbar .nav a {
         font-size: 1.1em;
-   }
+    }
+
     #my-menu {
         width: 14%;
     }
@@ -219,17 +327,38 @@ button[class="navbar-toggler"]{
         font-size: 1em;
         padding-bottom: 26%;
     }
+
     .b1-img1 {
         top: 90%;
         left: 10%;
     }
+
     .b1-img2 {
         bottom: 48%;
         right: 0%;
     }
+
+    /* Banner 2 ******************* */
+    .b2-shape1 {
+        width: 65%;
+        bottom: 560pt;
+    }
+
+    .b2-shape2 {
+        width: 30%;
+        top: -119pt;
+    }
 }
 
-@media (min-width:992px) and (max-width:1200px){
+@media (min-width:992px) and (max-width:1200px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .navbar .nav {
+        display: flex;
+    }
+
     .logo-img {
         width: 8em;
     }
@@ -237,9 +366,10 @@ button[class="navbar-toggler"]{
     .bi {
         font-size: 1.5em;
     }
-    .navbar .nav a{
+
+    .navbar .nav a {
         font-size: 1.2em;
-   }
+    }
 
     #my-menu {
         width: 14%;
@@ -257,17 +387,39 @@ button[class="navbar-toggler"]{
         font-size: 1.2em;
         padding-bottom: 26%;
     }
+
     .b1-img1 {
         top: 90%;
         left: 10%;
     }
+
     .b1-img2 {
         bottom: 48%;
         right: 0%;
     }
+
+    /* Banner 2 ************************** */
+
+    .b2-shape1 {
+        width: 65%;
+        bottom: 549pt;
+    }
+
+    .b2-shape2 {
+        width: 30%;
+        top: -144pt;
+    }
 }
 
-@media (min-width:1200px) and (max-width:1400px){
+@media (min-width:1200px) and (max-width:1400px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .navbar .nav {
+        display: flex;
+    }
+
     .logo-img {
         width: 9em;
     }
@@ -292,12 +444,63 @@ button[class="navbar-toggler"]{
         font-size: 1.2em;
         padding-bottom: 26%;
     }
+
     .b1-img1 {
         top: 90%;
         left: 10%;
     }
+
     .b1-img2 {
         bottom: 48%;
         right: 0%;
+    }
+
+
+    /* Banner2 *********************** */
+    .b2-shape1 {
+        width: 65%;
+        bottom: 602pt;
+
+    }
+    .b2-shape2 {
+        width: 30%;
+        top: -171pt;
+    }
+
+    .popular-menu h1 {
+        color: #2F58CD;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2.7em;
+        font-weight: 700;
+        padding-top: 10%;
+    }
+
+    .popular-menu .row {
+        margin-top: 8%;
+    }
+
+    .popular-menu button {
+        background-color: #2F58CD;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        margin-top: 8%;
+        font-size: 2em;
+        padding: 0.5% 3%;
+    }
+
+    .b2-card {
+        margin: 0px auto;
+        width: 80%;
+        text-align: left;
+    }
+
+    .b2-card h1 {
+        color: black;
+        padding-top: 0%;
+    }
+
+    .b2-card p {
+        font-size: 1.1em;
+        font-weight: 400;
     }
 }
