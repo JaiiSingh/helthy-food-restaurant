@@ -1,506 +1,477 @@
 body {
-    background-color: #dfe9c1;
-    text-align: center;
+  background-color: #D0F5BE;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
 #navigation {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../images/b1-shape3.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
-
-.logo-img {
-    width: 12em;
-}
-
-.navbar .nav a {
-    font-size: 1.5em;
+.navbar-brand>img {
+  width: 9rem;
 }
 
 .navbar-toggler {
-    border: none;
+  background-color: rgba(219, 219, 219, 0.781);
+  padding: 6.5px;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.menu-btn {
-    display: none;
-}
-
-.navbar .nav {
-    display: flex;
+  box-shadow: none;
 }
 
 .bi-list {
-    color: white;
-    font-size: 1.5em;
+  color: black;
+}
+
+#navigation .nav .nav-link {
+  color: white;
+  display: flex;
 }
 
 #my-menu {
-    background-color: rgb(76, 142, 230);
-    width: 13%;
-    position: absolute;
-    right: 0px;
-    padding: 0px 10px;
-    z-index: 1;
+  width: 7rem;
+  margin-left: auto !important;
+  padding-left: 1.5rem;
+  text-align: left;
 }
 
 #my-menu a {
-    color: white;
-    font-size: .8em;
-}
-
-.b1-tittle,
-.b1-des {
-    color: white;
-    margin: 0% auto;
+  color: white;
+  font-size: 1rem;
 }
 
 .b1-tittle {
-    padding-top: 10%;
-    font-size: 7em;
-    font-family: 'Ubuntu', sans-serif;
-    line-height: 1em;
-    margin-bottom: 3%;
+  color: white;
+  font-weight: 600;
+  font-size: 5rem;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 5rem;
+  padding: 3rem 0 1rem 0;
 }
 
 .b1-des {
-    font-size: 1.6em;
-    font-family: 'Lato', sans-serif;
-    padding-bottom: 17%;
-    width: 60%;
-}
-
-.b1-img1,
-.b1-img2 {
-    position: absolute;
+  width: 50%;
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto 0 auto;
+  padding: 0 0 25% 0;
 }
 
 .b1-img1 {
-    width: 15%;
-    top: 91%;
-    left: 10%;
+  position: absolute;
+  left: 5%;
+  bottom: -8%;
+  max-width: 15%;
 }
 
 .b1-img2 {
-    bottom: 40%;
-    right: 0%;
-    width: 8.5%;
-    z-index: 0;
+  position: absolute;
+  right: 0%;
+  bottom: 56%;
+  max-width: 10%;
 }
 
-
-/* Banner 2 is from here */
+/* Banner 2 */
+.b2-div {
+  position: relative;
+  padding: 0px;
+}
 
 .b2-shape1 {
-    width: 65%;
-    position: absolute;
-    right: 0px;
-    z-index: -1;
-    bottom: 611pt;
-}
-.b2-shape2 {
-    width: 26%;
-    position: absolute;
-    right: 0px;
-    top: -171pt;
-    z-index: -1;
+  position: absolute;
+  bottom: 63vh;
+  right: 0px;
+  width: 61%;
+  z-index: -1;
 }
 
-.popular-menu h1 {
-    color: #2F58CD;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2.7em;
-    font-weight: 700;
-    padding-top: 10%;
-}
-
-.popular-menu .row {
-    margin-top: 8%;
-}
-
-.popular-menu button {
-    background-color: #2F58CD;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    margin-top: 8%;
-    font-size: 2em;
-    padding: 0.5% 3%;
+.popular-menu>h1 {
+  color: #7287ae;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-family: 'Ubuntu', sans-serif;
+  /* text-shadow: 1px 1px 4px black; */
+  padding: 5% 0% 2% 0%;
 }
 
 .b2-card {
-    margin: 0px auto;
-    width: 80%;
-    text-align: left;
+  width: 18rem;
+  margin: 0% auto;
+  box-shadow: 2px 2px 5px black;
 }
 
-.b2-card h1 {
-    color: black;
-    padding-top: 0%;
+.card-body {
+  text-align: left;
 }
 
-.b2-card p {
-    font-size: 1.1em;
-    font-weight: 400;
+.card-body>h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
+.card-body>p {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+}
 
-
-@media (max-width:390px) {
-    .menu-btn {
-        display: block;
-    }
-
-    .navbar .nav {
-        display: none;
-    }
-
-    .logo-img {
-        width: 5em;
-    }
-
-    #my-menu {
-        width: 20%;
-    }
-
-    .b1-tittle {
-        font-size: 2em;
-    }
-
-    .b1-des {
-        font-size: .5em;
-        padding-bottom: 26%;
-    }
-
+.popular-menu button {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  padding: 0% 5%;
+  font-size: 1.3rem
 }
 
 
-@media (min-width:390px) and (max-width:576px) {
-    .menu-btn {
-        display: block;
-    }
 
-    .navbar .nav {
-        display: none;
-    }
-
-    .logo-img {
-        width: 5em;
-    }
-
-    .bi {
-        font-size: 1.2em;
-    }
-
-    #my-menu {
-        width: 18%;
-    }
-
-    #my-menu a {
-        font-size: .7em;
-    }
-
-    .b1-tittle {
-        font-size: 3em;
-    }
-
-    .b1-des {
-        font-size: .7em;
-        padding-bottom: 26%;
-    }
-
-    .b1-img1 {
-        top: 90%;
-        left: 10%;
-    }
-
-    .b1-img2 {
-        bottom: 48%;
-        right: 0%;
-    }
-
-    /* Banner 2 ************************* */
-    .b2-shape1 {
-        width: 5rem;
-        bottom: 30rem;
-    }
-
-    .b2-shape2 {
-        width: 23%;
-        top: -82pt;
-    }
+/* Bannner 3 and Banner 4 */
+.b3,.b4{
+  position: relative;
+  box-shadow: 1px 1px 5px black;
+}
+.b3 div,.b4 div {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+.b3 img[alt="food image"],.b4 img[alt="food image"] {
+  width: 100%;
+}
+.b3 img[alt="shape"],.b4 img[alt="shape"]{
+  position: absolute;
+  max-width: 15%;
+}
+.b3 img[alt="shape"]{
+  bottom: -6%;
+  left: 15%;
+  z-index: 1;
+}
+.b4 img[alt="shape"]{
+  bottom: -6%;
+  right: 10%;
+}
+.b3 h1,.b4 h1{
+  font-size: 4rem;
+  width: 85%;
+  padding:16% 0% 2% 5%;
+}
+.b3 p,.b4 p{
+  font-size: 2rem;
+  width: 85%;
+  text-align: justify;
+  padding: 2% 0% 2% 5%;
+}
+.b3 button,.b4 button{
+  font-size: 2rem;
+  margin-left: 6%;
 }
 
-@media (min-width:576px) and (max-width:768px) {
-    .menu-btn {
-        display: block;
-    }
-
-    .navbar .nav {
-        display: none;
-    }
-
-    .logo-img {
-        width: 7em;
-    }
-
-    .bi {
-        font-size: 1.5em;
-    }
-
-    #my-menu {
-        width: 18%;
-    }
-
-    #my-menu a {
-        font-size: .8em;
-    }
-
-    .b1-tittle {
-        font-size: 4em;
-    }
-
-    .b1-des {
-        font-size: .7em;
-        padding-bottom: 26%;
-    }
-
-    .b1-img1 {
-        top: 90%;
-        left: 10%;
-    }
-
-    .b1-img2 {
-        bottom: 48%;
-        right: 0%;
-    }
-
-    /* Banner 2 ***************** */
-    .b2-shape1 {
-        width: 59%;
-        bottom: 600pt;
-    }
-
-    .b2-shape2 {
-        width: 23%;
-        top: -82pt;
-    }
+/* Banner 5 */
+#banner5 div[class="container-xxl"]{
+  background-color: #7287ae;
+}
+#banner5 p[class="display-2"]{
+  color: white;
+  font-weight: 400;
+  padding-top: 5%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-@media (min-width:768px) and (max-width:992px) {
-    .menu-btn {
-        display: none;
-    }
-
-    .navbar .nav {
-        display: flex;
-    }
-
-    .logo-img {
-        width: 7em;
-    }
-
-    .bi {
-        font-size: 1.5em;
-    }
-
-    .navbar .nav a {
-        font-size: 1.1em;
-    }
-
-    #my-menu {
-        width: 14%;
-    }
-
-    #my-menu a {
-        font-size: .8em;
-    }
-
-    .b1-tittle {
-        font-size: 4.7em;
-    }
-
-    .b1-des {
-        font-size: 1em;
-        padding-bottom: 26%;
-    }
-
-    .b1-img1 {
-        top: 90%;
-        left: 10%;
-    }
-
-    .b1-img2 {
-        bottom: 48%;
-        right: 0%;
-    }
-
-    /* Banner 2 ******************* */
-    .b2-shape1 {
-        width: 65%;
-        bottom: 560pt;
-    }
-
-    .b2-shape2 {
-        width: 30%;
-        top: -119pt;
-    }
+.order-process{
+  padding: 6% 0% 3% 0%;
+}
+.order-process a{
+  background-color: #ffffff;
+  color: #7287ae;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1% 2%;
 }
 
-@media (min-width:992px) and (max-width:1200px) {
-    .menu-btn {
-        display: none;
-    }
-
-    .navbar .nav {
-        display: flex;
-    }
-
-    .logo-img {
-        width: 8em;
-    }
-
-    .bi {
-        font-size: 1.5em;
-    }
-
-    .navbar .nav a {
-        font-size: 1.2em;
-    }
-
-    #my-menu {
-        width: 14%;
-    }
-
-    #my-menu a {
-        font-size: 1em;
-    }
-
-    .b1-tittle {
-        font-size: 5.5em;
-    }
-
-    .b1-des {
-        font-size: 1.2em;
-        padding-bottom: 26%;
-    }
-
-    .b1-img1 {
-        top: 90%;
-        left: 10%;
-    }
-
-    .b1-img2 {
-        bottom: 48%;
-        right: 0%;
-    }
-
-    /* Banner 2 ************************** */
-
-    .b2-shape1 {
-        width: 65%;
-        bottom: 549pt;
-    }
-
-    .b2-shape2 {
-        width: 30%;
-        top: -144pt;
-    }
+.order-process h2,.order-process p{
+  margin:4% auto;
+  color: white;
+}
+.order-process h2{
+  font-size: 2rem;
+}
+.order-process p{
+  font-size: 1.2rem;
+  width: 77%;
+  font-family: "Lato", sans-serif;
 }
 
-@media (min-width:1200px) and (max-width:1400px) {
-    .menu-btn {
-        display: none;
-    }
 
-    .navbar .nav {
-        display: flex;
-    }
+/* Banner 6 */
 
-    .logo-img {
-        width: 9em;
-    }
+.b6{
+  background-image: url(../images/b6-image.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12% 10%;
+}
+.b6 h2,.b6 p{
+  color: #7287ae;
+  font-family: 'Ubuntu', sans-serif;
+  width: 80%;
+  margin: 3% auto;
+}
+.b6 button{
+  padding: 0% 5%;
+  background-color: #7287ae;
+  border-color: #7287ae;
+}
 
-    .bi {
-        font-size: 1.8em;
-    }
+/* Banner 7 */
 
-    #my-menu {
-        width: 14%;
-    }
+#banner7 p{
+  color: #7287ae;
+}
+.bi-quote{
+  font-size: 4rem;
+}
 
-    #my-menu a {
-        font-size: 1em;
-    }
+/* Footer */
+#footer div[class="container-fluid"]{
+  background-image: url(../images/ft-bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.ft-shape{
+  position: absolute;
+  left: 0;
+  bottom: 0pt;
+  width: 49vh;
+  z-index: -1;
+}
 
-    .b1-tittle {
-        font-size: 6.2em;
-    }
-
-    .b1-des {
-        font-size: 1.2em;
-        padding-bottom: 26%;
-    }
-
-    .b1-img1 {
-        top: 90%;
-        left: 10%;
-    }
-
-    .b1-img2 {
-        bottom: 48%;
-        right: 0%;
-    }
+.about{
+ text-align: left;
+ color: white;
+ padding: 13% 0% 5% 0%;
+}
+.about .row{
+  margin-top: 19%;
+  margin-bottom: 9%;
+}
+.about ul{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
 
 
-    /* Banner2 *********************** */
-    .b2-shape1 {
-        width: 65%;
-        bottom: 602pt;
 
-    }
-    .b2-shape2 {
-        width: 30%;
-        top: -171pt;
-    }
+@media (max-width: 576px) {
+  #navigation {
+    background-position: top;
+    background-size: auto;
+  }
 
-    .popular-menu h1 {
-        color: #2F58CD;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 2.7em;
-        font-weight: 700;
-        padding-top: 10%;
-    }
+  #navigation .nav .nav-link {
+    display: none;
+  }
 
-    .popular-menu .row {
-        margin-top: 8%;
-    }
+  .b1-tittle {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+  }
 
-    .popular-menu button {
-        background-color: #2F58CD;
-        color: white;
-        font-family: 'Lato', sans-serif;
-        margin-top: 8%;
-        font-size: 2em;
-        padding: 0.5% 3%;
-    }
+  .b1-des {
+    padding: 0 0 16% 0;
+    font-size: 0.8rem;
+  }
 
-    .b2-card {
-        margin: 0px auto;
-        width: 80%;
-        text-align: left;
-    }
+  /* Banner 2 */
 
-    .b2-card h1 {
-        color: black;
-        padding-top: 0%;
-    }
+  .b2-shape1 {
+    visibility: hidden;
+  }
 
-    .b2-card p {
-        font-size: 1.1em;
-        font-weight: 400;
-    }
+  .popular-menu>h1 {
+    font-size: 1rem;
+  }
+
+  .b2-card {
+    width: 10rem;
+    margin-bottom: 4%;
+  }
+
+  .card-body>h1 {
+    font-size: 1rem;
+  }
+
+  .card-body>p {
+    font-size: .8rem;
+  }
+
+  .popular-menu button {
+    font-size: .8rem;
+  }
+/* Bannner 3 and Banner 4 */
+.b3,.b4{
+  box-shadow: none;
+}
+.b3 img[alt="shape"],.b4 img[alt="shape"]{
+  bottom: -2%;
+  left: 63%;
+}
+.b3 div,.b4 div{
+  margin: 0px auto;
+  box-shadow: 1px 0px 6px black;
+}
+
+.b3 h1,.b4 h1{
+  font-size: 2rem;
+ }
+ .b3 p,.b4 p{
+  font-size: .9rem;
+ }
+ .b3 button,.b4 button{
+  font-size: .8rem;
+  margin-bottom: 10%;
+ }
+ /* Banner 5 */
+ .order-process p{
+  font-size: .9rem;
+ }
+ /* Banner 6 */
+ .b6 p{
+  font-size: 1rem !important;
+ }
+ /* Banner 7 */
+ #banner7 p[class="fs-2"]{
+  font-size: 1rem !important;
+ }
+ #banner7 p[class="display-2 fw-bold"]{
+ font-size: 1.4rem !important;
+ }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #navigation .nav .nav-link {
+    display: none;
+  }
+
+  .b2-shape1 {
+    bottom: 155vh;
+  width: 55%;
+  }
+
+  .b2-card {
+    margin-bottom: 5%;
+    width: 14rem;
+  }
+
+/* Bannner 3 and Banner 4 */
+.b3,.b4{
+  box-shadow: none;
+}
+.b3 img[alt="shape"],.b4 img[alt="shape"]{
+  bottom: -3%;
+  left: 63%;
+}
+.b3 div,.b4 div{
+  margin: 0px auto;
+  box-shadow: 1px 0px 6px black;
+}
+.b3 h1,.b4 h1{
+  font-size: 2.5rem;
+  padding: 9% 0% 2% 5%;
+ }
+ .b3 p,.b4 p{
+  font-size: 1.2rem;
+ }
+ .b3 button,.b4 button{
+  font-size: 1rem;
+  margin-bottom: 10%;
+ }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #navigation .nav .nav-link {
+    display: none;
+  }
+  .b2-shape1 {
+    bottom: 53vh;
+  }
+  .b2-card {
+    width: 12rem;
+  }
+
+  .card-body>h1 {
+    font-size: 1.2rem;
+  }
+
+  .card-body>p {
+    font-size: .8rem;
+  }
+
+  .popular-menu button {
+    font-size: 1.1rem
+  }
+/* Bannner 3 and Banner 4 */
+  .b3 h1,.b4 h1{
+    font-size: 2.5rem;
+   }
+   .b3 p,.b4 p{
+    font-size: 1rem;
+   }
+   .b3 button,.b4 button{
+    font-size: 1rem;
+   }
+
+    /* Banner 5 */
+ .order-process p{
+  font-size: .85rem;
+ }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .b3 h1,.b4 h1{
+    font-size: 3rem;
+   }
+   .b3 p,.b4 p{
+    font-size: 1.2rem;
+   }
+   .b3 button,.b4 button{
+    font-size: 1.2rem;
+   }
+      /* Banner 5 */
+ .order-process p{
+  font-size: .9rem;
+ }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+   .b3 h1,.b4 h1{
+    font-size: 3.5rem;
+   }
+   .b3 p,.b4 p{
+    font-size: 1.5rem;
+   }
+   .b3 button,.b4 button{
+    font-size: 1.5rem;
+   }
+      /* Banner 5 */
+ .order-process p{
+  font-size: 1rem;
+ }
 }
